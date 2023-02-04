@@ -74,8 +74,8 @@ function Item(title, desc) {
   const that = this;
 
   this.element = function (id) {
-    // if (!id && id !== 0) throw new Error("Missing ID");
-    // this.id = id;
+    if (!id && id !== 0) throw new Error("Missing ID");
+    this.id = id;
 
     const item = {
       type: "div",
